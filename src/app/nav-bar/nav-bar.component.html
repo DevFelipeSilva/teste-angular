@@ -1,13 +1,15 @@
 <p>
 <mat-toolbar color="primary" class="d-flex">
-    <span>Api GitHub</span>
+  <div class="container d-flex align-items-center">
+    <span class="mt-3">Api GitHub</span>
     <span class="example-spacer"></span>
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width mt-3">
             <input matInput placeholder="Username" [(ngModel)]="userValue">
         </mat-form-field>
-    <button mat-icon-button class="example-icon" (click)="getUser()" aria-label="Example icon-button with share icon">
+        <button mat-icon-button class="example-icon mt-3" (click)="getUser()" aria-label="Example icon-button with share icon">
       <mat-icon>search</mat-icon>
     </button>
+  </div>
   </mat-toolbar>
   </p>
   
