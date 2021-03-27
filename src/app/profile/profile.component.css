@@ -1,0 +1,13 @@
+.avatar>img{
+    border-radius: 50%;
+    width: 150px;
+}
+
+.vl {
+    border-left: 2px solid #DDD;
+    height: 100px;
+  }
+.hl{
+    border-top: 2px solid #ddd;
+    width: auto;
+}

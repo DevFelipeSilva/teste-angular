@@ -1,2 +1,3 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar (user)="setUserValue($event)"></app-nav-bar>
+<app-profile [user]="userValue"></app-profile>
 <!-- <router-outlet></router-outlet> -->

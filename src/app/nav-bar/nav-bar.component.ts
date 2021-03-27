@@ -16,7 +16,7 @@ export class NavBarComponent implements OnInit {
   }
 
   getUser(){
-    console.log(this.userValue)
-    // this.user.emit(this.userValue)
+    this.user.emit(this.userValue);
+    this.userValue = ''
   }
 }

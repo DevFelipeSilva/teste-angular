@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'teste-angular';
+  userValue:string = 'devFelipeSilva'
+  
+  setUserValue(userValue){
+    //console.log(userValue)
+    this.userValue = userValue
+  }
 }
