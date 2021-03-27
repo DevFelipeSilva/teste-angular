@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
   path: '',
-  component: NavBarComponent
+  component: AppComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/'
   }
 ]
 
