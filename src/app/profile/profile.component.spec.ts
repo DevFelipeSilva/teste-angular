@@ -24,4 +24,8 @@ describe('ProfileComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Garantir que profile não inicie vazio', ()=>{
+    expect(component.profile != {}).toBeTruthy();
+  })
 });

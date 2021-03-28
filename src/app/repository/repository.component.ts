@@ -19,7 +19,7 @@ export class RepositoryComponent implements OnInit, OnChanges {
   }
   
   ngOnChanges(changes: SimpleChanges) { 
-    this.userName =changes.user.currentValue
+    this.userName = changes.user.currentValue
     this.getRepositories(changes.user.currentValue);
  }
  getRepositories(userValue: string){

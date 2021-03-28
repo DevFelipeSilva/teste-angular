@@ -26,4 +26,9 @@ describe('RepositoryComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Garantir que repositories não inicie vazio', ()=>{
+    expect(component.repositories != {}).toBeTruthy();
+  })
+
 });

@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavBarComponent } from './nav-bar.component';
+import { NavBarComponent} from './nav-bar.component';
 
 describe('NavBarComponent', () => {
   let component: NavBarComponent;
@@ -22,4 +22,8 @@ describe('NavBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Garantir que userValue inicie Vazio', ()=>{
+    expect(component.userValue == '').toBeTruthy();
+  })
 });
