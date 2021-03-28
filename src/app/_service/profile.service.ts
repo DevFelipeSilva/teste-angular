@@ -12,6 +12,6 @@ export class ProfileService {
   constructor(private http: HttpClient) { }
 
   getProfile(userValue: string):Observable<any>{
-    return this.http.get(this.api+'/users/'+userValue);
-  }
+    return this.http.get(this.api+'/users/'+userValue)
+  };
 }
