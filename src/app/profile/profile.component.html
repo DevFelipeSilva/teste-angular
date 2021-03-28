@@ -3,15 +3,15 @@
         <img src="{{profile.avatar_url}}" alt="avatar Photo">
     </div>
     <div class="d-flex flex-column flex-md-row">
-        <div class="d-flex flex-column m-2">
+        <div class="d-flex flex-column m-2 pl-4">
             <h2>{{ profile.name }}</h2>
             <h4>{{ profile.login }}</h4>
             <h5 *ngIf="profile.bio">{{ profile.bio }}</h5>
         </div>
         <div class="vl mr-2 d-md-flex d-none"></div>
         <div class="hl my-2 d-md-none d-flex"></div>
-        <div class="d-flex flex-column">
-            <div class="d-flex flex-row">
+        <div class="d-flex flex-column pl-4">
+            <div class="d-flex flex-row mt-2">
                 <mat-icon class="mr-2">location_on</mat-icon><span>{{profile.location}}</span>
             </div>
             <div class="d-flex flex-row" *ngIf="profile.company"> 

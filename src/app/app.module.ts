@@ -10,17 +10,22 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';   
+import {MatFormFieldModule} from '@angular/material/form-field';  
+import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';  
+
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { RepositoryComponent } from './repository/repository.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    ProfileComponent
+    ProfileComponent,
+    RepositoryComponent
   ],
   imports: [
     BrowserModule,
@@ -31,8 +36,10 @@ import {HttpClientModule} from '@angular/common/http'
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
+    MatCardModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,9 @@
 <app-nav-bar (user)="setUserValue($event)"></app-nav-bar>
 <app-profile [user]="userValue"></app-profile>
-<!-- <router-outlet></router-outlet> -->
+<div class="container mt-5">
+    <h1>Repositorios</h1>
+    <hr>
+    <app-repository [user]="userValue"></app-repository>
+</div>
+
+

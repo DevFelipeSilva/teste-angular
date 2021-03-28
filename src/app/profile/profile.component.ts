@@ -20,7 +20,7 @@ export class ProfileComponent implements OnInit, OnChanges {
   }
   getProfile(userValue){
     this.profileService.getProfile(userValue).subscribe((data)=>{
-      console.log(data)
+     // console.log(data)
       this.profile = data
     })
   }
