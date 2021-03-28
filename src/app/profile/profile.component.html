@@ -20,7 +20,7 @@
             <div class="d-flex flex-row algin-items-center">
                 <mat-icon class="mr-2">supervisor_account</mat-icon><span>Followers: {{profile.followers}}</span><span class="ml-2">Following: {{profile.following}}</span>
             </div>
-            <div class="d-flex flex-row algin-items-center">
+            <div class="d-flex flex-row algin-items-center" *ngIf="profile.blog">
                 <mat-icon class="mr-2">link</mat-icon><span><a class="text-primary" href="{{profile.blog}}">{{ profile.blog }}</a></span>
             </div>
         </div>
