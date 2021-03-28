@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { RepositoryService } from '../_service/repository.service';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-repository',
@@ -11,9 +12,8 @@ export class RepositoryComponent implements OnInit, OnChanges {
   @Input() user: string
   repositories:any = ''
   userName: string;
-  repository: any = '';
 
-  constructor(private getrepositories: RepositoryService) { }
+  constructor(private getrepositories: RepositoryService, private _snackBar: MatSnackBar) { }
 
   ngOnInit(): void {
   }
@@ -24,15 +24,18 @@ export class RepositoryComponent implements OnInit, OnChanges {
  }
  getRepositories(userValue: string){
     this.getrepositories.getRepositories(userValue).subscribe((data)=>{
-      this.repositories = data
+      // console.log(data)
+      this.repositories = data;
+    },(err)=>{
+      console.log(err)
+      if(err.status == 404){
+          this._snackBar.open('Usuário não existe', null, {
+            duration: 2000,
+            panelClass: ['text-white', 'font-weight-bold']
+          });
+      }
     })
  }
- getRepository(repositoryName: string){
-   if(this.panelOpenState)
-    this.getrepositories.getRepository(this.userName, repositoryName).subscribe((data)=>{
-      console.log(data);
-      this.repository = data
-    })
- }
+
 
 }

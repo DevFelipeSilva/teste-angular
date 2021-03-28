@@ -12,17 +12,24 @@
         </p>
       </mat-panel-description>
     </mat-expansion-panel-header>
-    <p>{{item.description}}</p>
-    <p>Criado em: {{item.created_at | date:"dd/MM/yy HH:mm:ss"}}</p>
-    <p>Última atualização: {{item.pushed_at | date:"dd/MM/yy HH:mm:ss"}}</p>
+        <p>{{item.description}}</p>
+        <p>Criado em: {{item.created_at | date:"dd/MM/yy HH:mm:ss"}}</p>
+        <p>Última atualização: {{item.pushed_at | date:"dd/MM/yy HH:mm:ss"}}</p>
     <div class="align-items-center d-flex">
-    <p>
-        <mat-icon>star_border</mat-icon>
-    </p>
-    <p> Star: {{ item.stargazers_count }}</p>
+        <p><mat-icon>star_border</mat-icon></p>
+        <p> Star: {{ item.stargazers_count }}</p>
+    </div>
+    <div class="align-items-center d-flex">
+        <p><mat-icon>star_border</mat-icon></p>
+        <p> forks: {{ item.forks }}</p>
+    </div>
+    <div class="align-items-center d-flex">
+        <p>Clone: {{ item.watchers_count }}</p>
+    </div>
+    <div class="align-items-center d-flex">
+        <p>Clone: {{ item.url_clone }}</p>
     </div>
   </mat-expansion-panel>
-  
+ 
   </div>
   </div>
-  

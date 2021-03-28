@@ -14,8 +14,4 @@ export class RepositoryService {
   getRepositories(userValue: string):Observable<any>{
     return this.http.get(this.api+'/users/'+userValue+'/repos');
   }
-
-  getRepository(userName: string, repositoryName: string): Observable<any>{
-    return this.http.get(environment.api+"/repos/"+userName+"/"+repositoryName);
-  }
 }

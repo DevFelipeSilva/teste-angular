@@ -17,7 +17,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import {HttpClientModule} from '@angular/common/http';
-import { RepositoryComponent } from './repository/repository.component'
+import { RepositoryComponent } from './repository/repository.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { RepositoryComponent } from './repository/repository.component'
     MatCardModule,
     FormsModule,
     HttpClientModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
