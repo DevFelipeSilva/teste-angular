@@ -1,27 +1,24 @@
 # TesteAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.15.
+Aplicação angular que busca repositórios de um usuário, através da API do GitHub.
 
-## Development server
+## Instalando Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Primeiro passo é fazer o clone do projeto com o seguinte comando: `git clone https://github.com/DevFelipeSilva/teste-angular.git`.
 
-## Code scaffolding
+Depois de clonado, navegue até o projeto através de um prompt de comando e execute o seguinte comando: `npm install`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Inicializando projeto
 
-## Build
+Execute `ng serve --open` para iniciar o  projeto. Navegue para `http://localhost:4200/`. E a aplicação já estará rodando.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Executando testes unitários
 
-## Running unit tests
+Execute `ng test` para rodar os testes via [Karma](https://karma-runner.github.io).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Telas do Prtotipo do projeto
 
-## Running end-to-end tests
+![alt text](prototypes/HomeLight-0.png)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+![alt text](prototypes/HomeLigh–1.png)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
