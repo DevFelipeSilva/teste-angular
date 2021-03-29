@@ -34,6 +34,12 @@ export class RepositoryComponent implements OnInit, OnChanges {
             panelClass: ['text-white', 'font-weight-bold']
           });
       }
+      if(err.status == 403){
+        this._snackBar.open('Máximo de requisições feitas', null, {
+          duration: 2000,
+          panelClass: ['text-white', 'font-weight-bold']
+        });
+    }
     })
  }
 
